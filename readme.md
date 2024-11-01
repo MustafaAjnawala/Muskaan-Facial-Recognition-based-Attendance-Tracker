@@ -1,5 +1,7 @@
 # Software application for the Automated Facial Recognition based Attendance Tracker
 (Requires an esp32cam powered hardware module to run)
+![WhatsApp Image 2024-10-23 at 13 17 30_43b396de](https://github.com/user-attachments/assets/8218ccf0-9133-4c81-8740-6e759a329aa6)
+
 ### Add the student/faculty images in the database folder in the public directory
 
 ### To start up the app:
