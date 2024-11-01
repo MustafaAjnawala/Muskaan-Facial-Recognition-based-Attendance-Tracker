@@ -1,4 +1,7 @@
-# Facial Recognition using JavaScript and Esp32Cam Hardware Module
+# Software application for the Automated Facial Recognition based Attendance Tracker
+(Requires an esp32cam powered hardware module to run)
+### Add the student/faculty images in the database folder in the public directory
+
 ### To start up the app:
 1. run npm install in the root directory
 2. run node on server.js
