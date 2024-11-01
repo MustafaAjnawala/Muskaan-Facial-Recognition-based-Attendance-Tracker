@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="fr-styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/json2csv"></script>
+        <script src="./face-api.min.js"></script>
+        <script src="./fr-scripts.js"></script>
+        <script src="videocam_test2.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+               
+        <form id = "usernameForm">
+            
+        </form>
+        <img id="stream" src="http://esp32cam:81/stream" crossorigin="" style="border-radius: 10px; border: 5px solid #A1C9D7;">
+    <br>
+        <br>
+        <div class="buttonsDiv">
+            <button onclick="take_snapshot()">LOGIN</button>
+            <button type="button" id="btnDownloadCsv">DOWNLOAD ATTENDANCE</button>
+        </div>
+
+        <div id = "results"></div>
+        
+    </body>
+    <script>
+        // Function to ping the ESP32-CAM
+        async function pingESP32Cam() {
+            try {
+                const response = await fetch('http://esp32cam/control?var=framesize&val=9');
+                if (!response.ok) {
+                    throw new Error('HTTP error ' + response.status);
+                }
+                const data = await response.text();
+                console.log('Ping successful, response:', data);
+            } catch (error) {
+                console.error('Failed to ping ESP32-CAM:', error);
+            }
+        }
+
+        // Call the function when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            pingESP32Cam();
+        });
+    </script>
+</html>
+

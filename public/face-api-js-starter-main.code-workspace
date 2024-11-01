@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../AS LAB/formUsingAngular"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "face-api-js-starter-main"
+	}
+}

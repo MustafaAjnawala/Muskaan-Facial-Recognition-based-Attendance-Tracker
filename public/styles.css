@@ -1,0 +1,67 @@
+  
+
+body{
+    background-color:bisque;
+}
+#container {
+    background-color:white;
+    border: 5px solid black;
+    padding: 5%;
+    width: fit-content;
+    margin: 0 auto; /* Center horizontally */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  
+    button {
+        margin-top: 10px; 
+        padding: 10px 20px; 
+        background-color: lightcoral;
+        color: #fff; 
+        border: none;
+        border-radius: 5px; 
+        cursor: pointer; 
+  }
+
+img{
+    width: 800;
+    height: auto;
+}
+canvas{
+    position: absolute;
+}
+
+h1{
+    text-align: center;
+}
+
+
+img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+
+
+#user {
+    /* Adjust z-index and positioning if necessary */
+    position: relative; /* Ensure textbox is positioned correctly */
+    z-index: 2; /* Ensure textbox appears above other elements */
+}
+
+#camera{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+    img{
+        max-width: 45%
+    }
+
+    
+    canvas{
+        position: absolute;
+    }
