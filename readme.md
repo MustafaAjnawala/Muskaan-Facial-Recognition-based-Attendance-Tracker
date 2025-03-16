@@ -9,7 +9,7 @@ Check this Post out :https://www.linkedin.com/feed/update/urn:li:activity:725806
 ![image](https://github.com/user-attachments/assets/54c6184e-9b83-4d2b-9262-a016351dedd7)
 
 ##License
-[MIT License] (LICENSE)
+[MIT License](https://github.com/MustafaAjnawala/Muskaan-Facial-Recognition-based-Attendance-Tracker/blob/main/LICENSE)
 
 ### To start up the app:
 1. run npm install in the root directory
