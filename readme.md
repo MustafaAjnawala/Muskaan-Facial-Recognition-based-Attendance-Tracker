@@ -88,16 +88,13 @@ To modify the Docker setup:
 2. Edit `docker-compose.yml` for service configuration
 3. Rebuild using `docker-compose up --build`
 
-## License
-[MIT License](https://github.com/MustafaAjnawala/Muskaan-Facial-Recognition-based-Attendance-Tracker/blob/main/LICENSE)
-
-### To start up the app:
+### To simply start up the app:
 1. run npm install in the root directory
-2. run node on server.js
-3. go to http://localhost:5000
+2. run 'npm start' in bash of root directory and
+3. go to http://localhost:5000 to view the website
 
 
-
+## JavaScript Library related options
 ### Loading 4 primary models
 ``` javascript
     await Promise.all([
@@ -109,3 +106,6 @@ To modify the Docker setup:
 ```
 
 reference GitHub repo: ### [Face API Github](https://github.com/justadudewhohacks/face-api.js)
+
+## License
+[MIT License](https://github.com/MustafaAjnawala/Muskaan-Facial-Recognition-based-Attendance-Tracker/blob/main/LICENSE)
