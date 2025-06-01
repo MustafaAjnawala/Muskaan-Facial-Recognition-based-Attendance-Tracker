@@ -5,8 +5,36 @@ Check this Post out :https://www.linkedin.com/feed/update/urn:li:activity:725806
 
  Add the student/faculty images in the database folder in the public directory
 
+## 📁 Project Structure
 
-## Docker Setup Instructions
+This project is a Node.js web application with frontend files served from the `public/` directory. It includes camera/face recognition features, powered by the `face-api.js` library.  
+.  
+├── public/ # Public-facing frontend files  
+│ ├── assets/ # Static assets (e.g., images)  
+│ ├── database/ # user images database files  
+│ ├── models/ # Face recognition models  
+│ ├── face-api.min.js # Minified Face API script  
+│ ├── fr-index.html # Face recognition page  
+│ ├── fr-scripts.js # Face recognition JS logic  
+│ ├── fr-styles.css   
+│ ├── index.html # Main landing page  
+│ ├── signup.html # Signup form  
+│ ├── styles.css   
+│ ├── successful.html # Success redirect page  
+│ ├── videocam_test.js # Webcam/Face detection script (test version)  
+│ ├── videocam_test2.js # final test version for webcam logic  
+│ └── videocam.js  
+├── server.js # Node.js backend server file  
+├── dockerfile # Dockerfile for building container image  
+├── docker-compose.yml # Docker Compose setup  
+├── package.json # Project metadata and dependencies  
+├── package-lock.json # Dependency lock file  
+└── README.md # Project documentation  
+  
+
+
+
+## 🐳Docker Setup Instructions
 
 ### Prerequisites
 - Docker installed on your machine
