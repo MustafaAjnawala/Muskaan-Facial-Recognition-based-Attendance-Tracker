@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  face-recognition-app:
+    build: .
+    ports:
+      - "5000:5000"
+    container_name: face-api-container
+    restart: unless-stopped
