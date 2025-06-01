@@ -3,10 +3,62 @@ Check this Post out :https://www.linkedin.com/feed/update/urn:li:activity:725806
 (Requires an esp32cam powered hardware module to run)
 ![sWhatsApp Image 2024-10-23 at 13 17 30_43b396de](https://github.com/user-attachments/assets/2385c62f-c1ee-4dc6-9b01-7be2c772a4bb)
 
-### Add the student/faculty images in the database folder in the public directory
+ Add the student/faculty images in the database folder in the public directory
 
-## the hardware module enclosed in it's box
-![image](https://github.com/user-attachments/assets/54c6184e-9b83-4d2b-9262-a016351dedd7)
+
+## Docker Setup Instructions
+
+### Prerequisites
+- Docker installed on your machine
+- Docker Compose installed on your machine
+
+### Running with Docker
+
+1. **Build and Run the Container**
+   ```bash
+   docker-compose up --build
+   ```
+   This command will:
+   - Build the Docker image using the Dockerfile
+   - Start the container on port 5000
+   - Name the container as "face-api-container"
+
+2. **Stop the Container**
+   ```bash
+   docker-compose down
+   ```
+
+3. **View Running Containers**
+   ```bash
+   docker ps
+   ```
+
+### Docker Configuration Details
+
+#### Docker Compose Configuration
+The application uses Docker Compose with the following configuration:
+- Service name: face-recognition-app
+- Port mapping: 5000:5000
+- Auto-restart policy: unless-stopped
+
+#### Dockerfile Details
+The application is built using:
+- Node.js 18 base image
+- Working directory: /app
+- Exposes port 5000
+- Runs on `npm start` command
+
+### Troubleshooting
+- If port 5000 is already in use, modify the port mapping in `docker-compose.yml`
+- For permission issues, ensure Docker daemon is running
+- Check logs using: `docker logs face-api-container`
+
+## Development
+
+To modify the Docker setup:
+1. Edit `Dockerfile` for container build instructions
+2. Edit `docker-compose.yml` for service configuration
+3. Rebuild using `docker-compose up --build`
 
 ## License
 [MIT License](https://github.com/MustafaAjnawala/Muskaan-Facial-Recognition-based-Attendance-Tracker/blob/main/LICENSE)
