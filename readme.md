@@ -1,9 +1,12 @@
-Check this Post out :https://www.linkedin.com/feed/update/urn:li:activity:7258065359365173248/
 # Software application for the Automated Facial Recognition based Attendance Tracker
 (Requires an esp32cam powered hardware module to run)
 ![sWhatsApp Image 2024-10-23 at 13 17 30_43b396de](https://github.com/user-attachments/assets/2385c62f-c1ee-4dc6-9b01-7be2c772a4bb)
 
  Add the student/faculty images in the database folder in the public directory
+
+---
+## Hackathon Winning Project!
+Check out our Hackathon victory post on LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7258065359365173248/
 
 ## 📁 Project Structure
 
